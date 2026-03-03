@@ -61,3 +61,16 @@ E.g.
 # Change to 'age: int = 34' in src/app_script001.py
 apptainer run --bind=data:/scif/data,src:/scif/apps/app001/lib sciductainer_0.1.5.sif run app001
 ```
+
+Specifically with the app_dtd app you need to bind in the rivanna path to the populations like
+```bash
+apptainer run --bind=data:/scif/data --bind=src:/scif/apps/app_dtd/bin --bind=/project/bii_nssac/production/detailed_populations/ver_2_4_0/:/scif/data/pop digitaltwindemographics_latest.sif run app_dtd -- --us-state md
+```
+
+
+Data sources:
+
+Wastewater boundaries:  WasteWaterScan.org
+National DMAS: https://services.arcgis.com/AgwDJMQH12AGieWa/ArcGIS/rest/services/DMA/FeatureServer/0 (maybe)
+HSA boundaries:  https://data.dartmouthatlas.org/supplemental/
+HRR boundaries:  https://data.dartmouthatlas.org/supplemental/

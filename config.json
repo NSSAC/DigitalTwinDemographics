@@ -1,18 +1,38 @@
 { "image_type": "apptainer+scif",
   "apps": [
     {
-      "name": "Application 001",
-      "app": "app001_sciduct",
+      "name": "Digital Twin Demographics",
+      "app": "app_dtd_sciduct",
       "binds": {
         "input": "/input",
         "job": "/job",
         "output": "/scif/data",
 	"container_cache": "/cache"
       },
-      "description": "A test application for use with the Scuduct Job Service.",
+      "description": "An application that summarizes the demographics of population digital twins within various geographic boundaries.",
       "input_files": [
       ],
       "input_schema": {
+        "type": "object",
+        "properties": {
+          "us_states": {
+            "type": "array",
+            "label": "US States",
+            "description": "List of states to plot variants for",
+            "items": {
+              "type": "string",
+              "enum": ["US", "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "VI", "WA", "WV", "WI", "WY"]
+            },
+          "user_var_list": {
+			      "type": "string",
+			      "label": "Geographic Boundary column to use for grouping",
+			      "description": "List of variants to plot, MUST be comma separated (optional, default focus list may be out of date)"
+		      },
+            "minimum": 1
+            },
+          },
+        "required": ["us_states"]
+        
       },
       "output_files": {
         "associateJobMeta": true,
