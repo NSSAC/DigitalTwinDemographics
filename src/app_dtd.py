@@ -29,17 +29,17 @@ def get_population(config):
 
     
      # Map out all files in /scif directory
-    scif_path = Path('/scif/data/pop/va')
-    if scif_path.exists():
-        scif_files = [f.name for f in scif_path.iterdir() if f.is_file()]
-        print(f'Files in /scif: {scif_files}')
-        # Recursively show structure
-        for item in scif_path.iterdir():
-            if item.is_dir():
-                subfiles = [f.name for f in item.iterdir() if f.is_file()]
-                print(f'  {item.name}/: {subfiles}')
-    else:
-        print('/scif/data/pop/va directory does not exist')
+    # scif_path = Path('/scif/data/pop/va')
+    # if scif_path.exists():
+    #     scif_files = [f.name for f in scif_path.iterdir() if f.is_file()]
+    #     print(f'Files in /scif: {scif_files}')
+    #     # Recursively show structure
+    #     for item in scif_path.iterdir():
+    #         if item.is_dir():
+    #             subfiles = [f.name for f in item.iterdir() if f.is_file()]
+    #             print(f'  {item.name}/: {subfiles}')
+    # else:
+    #     print('/scif/data/pop/va directory does not exist')
     
     print(f'configuration: {config}')
 
@@ -54,13 +54,63 @@ def get_population(config):
     home_loc = pd.read_csv(hloc_file)
     pop = person.merge(home_loc[['hid','blockgroup_id','longitude','latitude']])
 
-    print(f'Population from {config["us_state"]} is size: {pop.shape[0]}')
+    #print(f'Population from {config["us_state"]} is size: {pop.shape[0]}')
     return pop
+
+def augment_population_fields(pop):
+
+    # Mapping synth pop characteristics to similar values as surveillance data columns
+    ### County
+    pop['county_fips'] = pop["blockgroup_id"].astype(str).str.slice(0,5).astype(int)
+    #pop.county.value_counts()
+
+    ### Sex
+    #sex_mapping = {1:"Male",2:"Female"}
+    sex_mapping = {1:"M",2:"F"}
+    pop['patient_current_sex'] = pop['sex'].map(sex_mapping)
+
+    ### Age Groups
+
+    age_group_mapping = {0:'0-9 Years', 1:'10-19 Years',2:'20-29 Years',
+                        3:'30-39 Years',4:'40-49 Years',5:'50-59 Years',
+                        6:'60-69 Years',7:'70-79 Years',
+                        8:'80+  Years',9:'80+  Years',10:'80+  Years'}
+    pop['ag'] = pop.age /10
+    pop['ag'] = pop.ag.apply(np.floor)
+    pop['age_group'] = pop['ag'].map(age_group_mapping)
+
+    ### Race
+    full_race_mapping = {1:'White',2:'Black',3: 'American Indian alone',4: 'Alaska Native alone',
+                        5:'American Indian and Alaska Native tribes', 6: 'Asian alone',
+                        7:'Native Hawaiian and Other Pacific Islander alone',
+                        8:'Some Other Race alone', 9: 'Two or More Races'}
+    tier_race_mapping = {1:'White',2:'Black',3: 'Native American',4: 'Native American',
+                        5:'Native American', 6: 'Asian or Pacific Islander',
+                        7:'Asian or Pacific Islander',
+                        8:'Other Race', 9: 'Two or more races'}
+
+    pop['tiered_race_ethnicity'] = pop['race'].map(tier_race_mapping)
+
+    ## Override race with Latino  for all Hispanic Ethnicities
+    pop.loc[pop.hispanic>1,'tiered_race_ethnicity'] = 'Latino'
+
+    return pop    
+
+def load_polygons_from_geojson(polygon_file):
+    print(f"Loading polygons from {polygon_file}")
+    polygons_gdf = gpd.read_file(polygon_file)
+    print(f"Loaded {len(polygons_gdf)} polygons from GeoJSON")
+    print(f"CRS: {polygons_gdf.crs}")
+    print(f"Shape: {polygons_gdf.shape}")
+    return polygons_gdf
+
+
 
 def load_polygons_from_csv(config):
     from shapely.geometry import shape
     import ast
     
+
     print(f"Loading polygons from {config['csv_path']}")
     df = pd.read_csv(config['csv_path'])
     
@@ -112,9 +162,63 @@ def find_pop_in_polygons(config, pop_gdf, polygons_gdf):
 
 def count_population_by_category(pop_in_polygons, category_columns):
     # Count population by specified category
-    category_counts = pop_in_polygons.groupby(category_columns).count().reset_index()
+    category_counts = pop_in_polygons.groupby(category_columns)['pid'].count().reset_index()
+    category_counts.columns = category_columns+['subpop_size']
 
     return category_counts
+
+def export_df_as_html(df, title, filename):
+    """Save a styled HTML table to disk without requiring jinja2."""
+    # Drop geometry column if present
+    df_export = df.copy()
+    if 'geometry' in df_export.columns:
+        df_export = df_export.drop(columns=['geometry'])
+    
+    # Build HTML manually
+    css = """
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; }
+        h1 { color: #333; margin-bottom: 20px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        th { background-color: #4CAF50; color: white; padding: 12px; text-align: left; font-weight: bold; border-bottom: 2px solid #45a049; }
+        td { padding: 10px; border-bottom: 1px solid #ddd; }
+        tr:hover { background-color: #f5f5f5; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+    </style>
+    """
+    
+    # Build table HTML
+    table_html = "<table>\n<thead><tr>"
+    for col in df_export.columns:
+        table_html += f"<th>{col}</th>"
+    table_html += "</tr></thead>\n<tbody>"
+    
+    for _, row in df_export.iterrows():
+        table_html += "<tr>"
+        for val in row:
+            table_html += f"<td>{val}</td>"
+        table_html += "</tr>\n"
+    table_html += "</tbody>\n</table>"
+    
+    full_html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{title}</title>
+    {css}
+</head>
+<body>
+    <h1>{title}</h1>
+    {table_html}
+</body>
+</html>"""
+    
+    with open(filename, "w", encoding='utf-8') as f:
+        f.write(full_html)
+    print(f"HTML saved to: {filename}")
+
+# Example: Export group_counts without altering notebook displays
+# export_df_as_html(group_counts.head(20), "Sub-Population Sizes by Demographic Groups", "subpop_sizes_summary.html")
 
 @app.default
 def main(
@@ -122,7 +226,8 @@ def main(
     us_state: str = "va",
     general_population_path: str = "/scif/data/pop/",
     population_path: str = "/project/bii_nssac/production/detailed_populations/ver_2_4_0/va",
-    csv_path: str = "/scif/data/site_polygons.csv"
+    csv_path: str = "/scif/data/site_polygons.csv",
+    polygon: str = "DMA"
     ):
     """
     This is the default function called when the script
@@ -145,22 +250,60 @@ def main(
         'us_state': us_state,
         'general_population_path': general_population_path,
         'population_path': population_path,
-        'csv_path': csv_path
+        'csv_path': csv_path,
+        'polygon': polygon
     }
 
-    print(f'configuration: {config}')
-    pop = get_population(config)
+    polygon_name_to_file = {
+        'DMA': "/scif/data/NationalDMAs.geojson",
+        'HSA': "/scif/data/HsaBdry_AK_HI_unmodified.geojson",
+        'HRR': "/scif/data/Hrr98Bdry_AK_HI_unmodified.geojson",
+        'wastewater': "/scif/data/wastewaterscan_polygons_extracted.shp",
+        'user_provided': None
+        }
+    
+    polygon_name_to_groupby_col = {
+        'DMA': 'NAME',
+        'HSA': 'HSANAME',
+        'HRR': 'NAME',
+        'wastewater': 'polygon_id',
+        'user_provided': None
+    }
+
+    print(f'Running with configuration: {config}')
+    
+    ## Load population
+    raw_pop = get_population(config)
+    pop = augment_population_fields(raw_pop)
 
     print(f'Population size from {config["us_state"]}: {pop.shape[0]}')
 
-    polygons_gdf = load_polygons_from_csv(config)
+    ## Load polygons
+    polygon_file = polygon_name_to_file.get(config['polygon'], None)
+    if "geojson" in polygon_file:
+        polygons_gdf = load_polygons_from_geojson(polygon_file)
+    elif "csv" in polygon_file:
+        polygons_gdf = load_polygons_from_csv(config)
+    else:
+        print(f"Invalid polygon type specified: {config['polygon']}. Please choose from {list(polygon_name_to_file.keys())}.")
+        
+
     pop_gdf = get_pop_coords(config, pop)
     pop_in_polygons = find_pop_in_polygons(config, pop_gdf, polygons_gdf)
     print(f'Population in polygons is size: {pop_in_polygons.shape[0]}')
 
-    category_columns = ['place_name', 'race']
+#    category_columns = ['place_name', 'race']
+    geo_col = polygon_name_to_groupby_col[config['polygon']]
+
+    category_columns = [geo_col,'tiered_race_ethnicity']
+    category_to_count = 'tiered_race_ethnicity'
+    geographic_grouping = config['polygon']
     category_counts = count_population_by_category(pop_in_polygons, category_columns)
     print("Population counts by category:\n", category_counts)
+
+    category_html = "/scif/data/population_counts_by_category.html"
+    print("Outputting population counts by category to HTML:", category_html)
+    export_df_as_html(category_counts, f"Population Counts of {category_to_count} by {geographic_grouping}", category_html)
 
     # outpath = Path(outdir)
     # outpath.mkdir(exist_ok=True, parents=True)

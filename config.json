@@ -23,15 +23,28 @@
               "type": "string",
               "enum": ["US", "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "VI", "WA", "WV", "WI", "WY"]
             },
-          "user_var_list": {
+          "polygon": {
+            "type": "array",
+            "label": "Popular Polygons for selection",
+            "description": "List of pre-loaded polygons to analyze the population by",
+            "items": {
+              "type": "string",
+              "enum": ["Wastewater Scan Polygons", "HSA boundaries", "HRR boundaries", "DMA (Designated Market Area) boundaries"]
+            },
+          "user_geo_polygon": {
 			      "type": "string",
-			      "label": "Geographic Boundary column to use for grouping",
-			      "description": "List of variants to plot, MUST be comma separated (optional, default focus list may be out of date)"
+			      "label": "User provided polygon for analysis of population",
+			      "description": "GeoJSON file "
+		      },
+          "user_geo_column_name": {
+			      "type": "string",
+			      "label": "Geographic Boundary name column to use for naming the different sub-populations",
+			      "description": "Column name in the input data to use for grouping the population by (e.g., 'state', 'geoid', 'NAME', etc.)"
 		      },
             "minimum": 1
             },
           },
-        "required": ["us_states"]
+        "required": ["us_states","polygon"]
         
       },
       "output_files": {
@@ -40,10 +53,20 @@
         "type": "folder",
         "contents": [
           {
-            "match": "${MATCH}/app001_sciduct/*.txt",
+            "match": "${MATCH}/app_dtd_sciduct/*.txt",
             "type": "txt",
             "isContainer": false
+          },
+          {
+            "match": "${MATCH}/app_dtd_sciduct/*.html",
+            "type": "html",
+            "isContainer": false
+          },          {
+            "match": "${MATCH}/app_dtd_sciduct/*.png",
+            "type": "png",
+            "isContainer": false
           }
+
 	    ]
       },
       "output_schema": {
