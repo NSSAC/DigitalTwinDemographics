@@ -17,6 +17,7 @@ $CMD
 
 %apprun app001_sciduct
 mkdir -p $SCIF_APPDATA
-NAME="$(jq -r .input.name /job/job.json)"
-AGE="$(jq -r .input.age /job/job.json)"
-scif run app001 --name $NAME --age $AGE --outdir $SCIF_APPDATA
+US_STATE=$(jq -r .input.us_states /job/job.json)"
+POLYGON=$(jq -r .input.polygon /job/job.json)"
+
+scif run app001 --us_states $US_STATE --polygon $POLYGON --outdir $SCIF_APPDATA
