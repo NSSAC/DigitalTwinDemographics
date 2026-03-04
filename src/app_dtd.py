@@ -21,10 +21,12 @@ app = cyclopts.App(
 
 def get_population(config):
     ## Population data 
-    pop_dir = f"{config['general_population_path']}{config['us_state']}"
-    person_file = pop_dir+f"/base_population/{config['us_state']}_person.csv"
-    hhold_file = pop_dir+f"/base_population/{config['us_state']}_household.csv"
-    hloc_file = pop_dir+f"/home_location_assignment/{config['us_state']}_household_residence_assignment.csv"
+    state_abbrv = config['us_state'].lower().strip()
+    
+    pop_dir = f"{config['general_population_path']}{state_abbrv}/"
+    person_file = pop_dir+f"/base_population/{state_abbrv}_person.csv"
+    hhold_file = pop_dir+f"/base_population/{state_abbrv}_household.csv"
+    hloc_file = pop_dir+f"/home_location_assignment/{state_abbrv}_household_residence_assignment.csv"
 
 
     
