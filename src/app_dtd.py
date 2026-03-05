@@ -19,44 +19,19 @@ app = cyclopts.App(
     )
 
 
-def get_population(config):
+def get_population(person_file, hhold_file, hloc_file):
     ## Population data 
-    state_abbrv = config['us_state'].lower().strip()
-    
-    pop_dir = f"{config['general_population_path']}{state_abbrv}/"
-    person_file = pop_dir+f"/base_population/{state_abbrv}_person.csv"
-    hhold_file = pop_dir+f"/base_population/{state_abbrv}_household.csv"
-    hloc_file = pop_dir+f"/home_location_assignment/{state_abbrv}_household_residence_assignment.csv"
-
-
-    
-     # Map out all files in /scif directory
-    # scif_path = Path('/scif/data/pop/va')
-    # if scif_path.exists():
-    #     scif_files = [f.name for f in scif_path.iterdir() if f.is_file()]
-    #     print(f'Files in /scif: {scif_files}')
-    #     # Recursively show structure
-    #     for item in scif_path.iterdir():
-    #         if item.is_dir():
-    #             subfiles = [f.name for f in item.iterdir() if f.is_file()]
-    #             print(f'  {item.name}/: {subfiles}')
-    # else:
-    #     print('/scif/data/pop/va directory does not exist')
-    
-    print(f'configuration: {config}')
-
     #### Load person and households data
-    print(f'Laoding population file: {person_file}')
+    print(f'Loading population file: {person_file}')
     person = pd.read_csv(person_file)
-    print(f'Laoding population file: {hhold_file}')
+    print(f'Loading population file: {hhold_file}')
     hhold = pd.read_csv(hhold_file)
 
     ## Home location data
-    print(f'Laoding home location file: {hloc_file}')
+    print(f'Loading home location file: {hloc_file}')
     home_loc = pd.read_csv(hloc_file)
     pop = person.merge(home_loc[['hid','blockgroup_id','longitude','latitude']])
 
-    #print(f'Population from {config["us_state"]} is size: {pop.shape[0]}')
     return pop
 
 def augment_population_fields(pop):
@@ -226,8 +201,9 @@ def export_df_as_html(df, title, filename):
 def main(
     # Add config parameters here:
     us_state: str = "va",
-    general_population_path: str = "/scif/data/pop/",
-    population_path: str = "/project/bii_nssac/production/detailed_populations/ver_2_4_0/va",
+    person_file: str = "/input/person.csv",
+    household_file: str = "/input/household.csv",
+    residence_file: str = "/input/residence_assignment.csv",
     csv_path: str = "/scif/data/site_polygons.csv",
     polygon: str = "DMA"
     ):
@@ -241,8 +217,12 @@ def main(
     ----------
     us_state: str
         lowercase two-letter state abbreviation to select which US population to access
-    general_population_path: str
-        The root directory for storing the population digital twins
+    person_file: str
+        Path to the person CSV file
+    household_file: str
+        Path to the household CSV file
+    residence_file: str
+        Path to the home location assignment CSV file
     csv_path: str
         Path to the CSV file containing polygon information
     
@@ -250,8 +230,9 @@ def main(
 
     config = {
         'us_state': us_state,
-        'general_population_path': general_population_path,
-        'population_path': population_path,
+        'person_file': person_file,
+        'household_file': household_file,
+        'residence_file': residence_file,
         'csv_path': csv_path,
         'polygon': polygon
     }
@@ -275,7 +256,7 @@ def main(
     print(f'Running with configuration: {config}')
     
     ## Load population
-    raw_pop = get_population(config)
+    raw_pop = get_population(person_file, household_file, residence_file)
     pop = augment_population_fields(raw_pop)
 
     print(f'Population size from {config["us_state"]}: {pop.shape[0]}')
@@ -306,15 +287,6 @@ def main(
     category_html = "/scif/data/population_counts_by_category.html"
     print("Outputting population counts by category to HTML:", category_html)
     export_df_as_html(category_counts, f"Population Counts of {category_to_count} by {geographic_grouping}", category_html)
-
-    # outpath = Path(outdir)
-    # outpath.mkdir(exist_ok=True, parents=True)
-    # outpath /= "main_output.txt"
-    # output = f"{name}'s age is {age}.\n"
-    # print(output)
-    # with outpath.open("w") as filehandle:
-    #     filehandle.write(output)
-    # return output
 
 
 if __name__ == "__main__":
