@@ -20,4 +20,19 @@ mkdir -p $SCIF_APPDATA
 US_STATE=$(jq -r .input.us_states /job/job.json)"
 POLYGON=$(jq -r .input.polygon /job/job.json)"
 
+POLYGON_DISPLAY=$(jq -r .input.polygon /job/job.json)
+
+# Map human readable polygon name back to the internal key the script expects
+if [ "$POLYGON_DISPLAY" == "DMA (Designated Market Area) boundaries" ]; then
+    POLYGON="DMA"
+elif [ "$POLYGON_DISPLAY" == "HSA boundaries" ]; then
+    POLYGON="HSA"
+elif [ "$POLYGON_DISPLAY" == "HRR boundaries" ]; then
+    POLYGON="HRR"
+elif [ "$POLYGON_DISPLAY" == "Wastewater Scan Polygons" ]; then
+    POLYGON="wastewater"
+else
+    POLYGON="DMA"
+fi
+
 scif run app001 --us_states $US_STATE --polygon $POLYGON --outdir $SCIF_APPDATA
