@@ -80,3 +80,6 @@ National DMAS: https://services.arcgis.com/AgwDJMQH12AGieWa/ArcGIS/rest/services
 HSA boundaries:  https://data.dartmouthatlas.org/supplemental/
 HRR boundaries:  https://data.dartmouthatlas.org/supplemental/
 
+SOCP codes from:  https://api.census.gov/data/2022/acs/acs5/pums/variables/SOCP.json
+
+

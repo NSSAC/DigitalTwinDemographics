@@ -12,14 +12,12 @@ Digital Twin demographics is a simple app that uses population digitial twins to
 
 %apprun app_dtd
 CMD="app_dtd.py $@"
-echo "Running $CMD" &&
-$CMD
+echo "Running $CMD" && $CMD
 
 %apprun app_dtd_sciduct
 mkdir -p $SCIF_APPDATA
 US_STATE=$(jq -r .input.us_states /job/job.json)"
 POLYGON=$(jq -r .input.polygon /job/job.json)"
-
 POLYGON_DISPLAY=$(jq -r .input.polygon /job/job.json)
 
 # Map human readable polygon name back to the internal key the script expects

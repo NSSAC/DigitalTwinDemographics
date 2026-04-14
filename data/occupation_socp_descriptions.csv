@@ -1,0 +1,532 @@
+occupation_socp,occupation_socp_category_code,occupation_socp_description,occupation_socp_label
+111021,MGR,General And Operations Managers,MGR-General And Operations Managers
+1110XX,MGR,Chief Executives And Legislators,MGR-Chief Executives And Legislators
+112011,MGR,Advertising And Promotions Managers,MGR-Advertising And Promotions Managers
+112021,MGR,Marketing Managers,MGR-Marketing Managers
+112022,MGR,Sales Managers,MGR-Sales Managers
+112030,MGR,Public Relations And Fundraising Managers,MGR-Public Relations And Fundraising Managers
+113012,MGR,Administrative Services Managers,MGR-Administrative Services Managers
+113013,MGR,Facilities Managers,MGR-Facilities Managers
+113021,MGR,Computer And Information Systems Managers,MGR-Computer And Information Systems Managers
+113031,MGR,Financial Managers,MGR-Financial Managers
+113051,MGR,Industrial Production Managers,MGR-Industrial Production Managers
+113061,MGR,Purchasing Managers,MGR-Purchasing Managers
+113071,MGR,"Transportation, Storage, And Distribution Managers","MGR-Transportation, Storage, And Distribution Managers"
+113111,MGR,Compensation And Benefits Managers,MGR-Compensation And Benefits Managers
+113121,MGR,Human Resources Managers,MGR-Human Resources Managers
+113131,MGR,Training And Development Managers,MGR-Training And Development Managers
+119013,MGR,"Farmers, Ranchers, And Other Agricultural Managers","MGR-Farmers, Ranchers, And Other Agricultural Managers"
+119021,MGR,Construction Managers,MGR-Construction Managers
+119030,MGR,Education And Childcare Administrators,MGR-Education And Childcare Administrators
+119041,MGR,Architectural And Engineering Managers,MGR-Architectural And Engineering Managers
+119051,MGR,Food Service Managers,MGR-Food Service Managers
+119070,MGR,Entertainment And Recreation Managers,MGR-Entertainment And Recreation Managers
+119081,MGR,Lodging Managers,MGR-Lodging Managers
+119111,MGR,Medical And Health Services Managers,MGR-Medical And Health Services Managers
+119121,MGR,Natural Sciences Managers,MGR-Natural Sciences Managers
+119141,MGR,"Property, Real Estate, And Community Association Managers","MGR-Property, Real Estate, And Community Association Managers"
+119151,MGR,Social And Community Service Managers,MGR-Social And Community Service Managers
+119161,MGR,Emergency Management Directors,MGR-Emergency Management Directors
+1191XX,MGR,Other Managers,MGR-Other Managers
+131011,BUS,"Agents And Business Managers Of Artists, Performers, And Athletes","BUS-Agents And Business Managers Of Artists, Performers, And Athletes"
+131021,BUS,"Buyers And Purchasing Agents, Farm Products","BUS-Buyers And Purchasing Agents, Farm Products"
+131022,BUS,"Wholesale And Retail Buyers, Except Farm Products","BUS-Wholesale And Retail Buyers, Except Farm Products"
+131023,BUS,"Purchasing Agents, Except Wholesale, Retail, And Farm Products","BUS-Purchasing Agents, Except Wholesale, Retail, And Farm Products"
+131030,BUS,"Claims Adjusters, Appraisers, Examiners, And Investigators","BUS-Claims Adjusters, Appraisers, Examiners, And Investigators"
+131041,BUS,Compliance Officers,BUS-Compliance Officers
+131051,BUS,Cost Estimators,BUS-Cost Estimators
+131070,BUS,Human Resources Workers,BUS-Human Resources Workers
+131081,BUS,Logisticians,BUS-Logisticians
+131082,BUS,Project Management Specialists,BUS-Project Management Specialists
+131111,BUS,Management Analysts,BUS-Management Analysts
+131121,BUS,"Meeting, Convention, And Event Planners","BUS-Meeting, Convention, And Event Planners"
+131131,BUS,Fundraisers,BUS-Fundraisers
+131141,BUS,"Compensation, Benefits, And Job Analysis Specialists","BUS-Compensation, Benefits, And Job Analysis Specialists"
+131151,BUS,Training And Development Specialists,BUS-Training And Development Specialists
+131161,BUS,Market Research Analysts And Marketing Specialists,BUS-Market Research Analysts And Marketing Specialists
+131199,BUS,"Business Operations Specialists, All Other","BUS-Business Operations Specialists, All Other"
+132011,FIN,Accountants And Auditors,FIN-Accountants And Auditors
+132020,FIN,Property Appraisers And Assessors,FIN-Property Appraisers And Assessors
+132031,FIN,Budget Analysts,FIN-Budget Analysts
+132041,FIN,Credit Analysts,FIN-Credit Analysts
+132051,FIN,Financial And Investment Analysts,FIN-Financial And Investment Analysts
+132052,FIN,Personal Financial Advisors,FIN-Personal Financial Advisors
+132053,FIN,Insurance Underwriters,FIN-Insurance Underwriters
+132061,FIN,Financial Examiners,FIN-Financial Examiners
+132070,FIN,Credit Counselors And Loan Officers,FIN-Credit Counselors And Loan Officers
+132081,FIN,"Tax Examiners And Collectors, And Revenue Agents","FIN-Tax Examiners And Collectors, And Revenue Agents"
+132082,FIN,Tax Preparers,FIN-Tax Preparers
+1320XX,FIN,Other Financial Specialists,FIN-Other Financial Specialists
+151211,CMM,Computer Systems Analysts,CMM-Computer Systems Analysts
+151212,CMM,Information Security Analysts,CMM-Information Security Analysts
+151221,CMM,Computer And Information Research Scientists,CMM-Computer And Information Research Scientists
+151230,CMM,Computer Support Specialists,CMM-Computer Support Specialists
+151241,CMM,Computer Network Architects,CMM-Computer Network Architects
+151244,CMM,Network And Computer Systems Administrators,CMM-Network And Computer Systems Administrators
+15124X,CMM,Database Administrators And Architects,CMM-Database Administrators And Architects
+151251,CMM,Computer Programmers,CMM-Computer Programmers
+151252,CMM,Software Developers,CMM-Software Developers
+151253,CMM,Software Quality Assurance Analysts And Testers,CMM-Software Quality Assurance Analysts And Testers
+151254,CMM,Web Developers,CMM-Web Developers
+151255,CMM,Web And Digital Interface Designers,CMM-Web And Digital Interface Designers
+151299,CMM,"Computer Occupations, All Other","CMM-Computer Occupations, All Other"
+152011,CMM,Actuaries,CMM-Actuaries
+152031,CMM,Operations Research Analysts,CMM-Operations Research Analysts
+1520XX,CMM,Other Mathematical Science Occupations,CMM-Other Mathematical Science Occupations
+171011,ENG,"Architects, Except Landscape And Naval","ENG-Architects, Except Landscape And Naval"
+171012,ENG,Landscape Architects,ENG-Landscape Architects
+171020,ENG,"Surveyors, Cartographers, And Photogrammetrists","ENG-Surveyors, Cartographers, And Photogrammetrists"
+172011,ENG,Aerospace Engineers,ENG-Aerospace Engineers
+172041,ENG,Chemical Engineers,ENG-Chemical Engineers
+172051,ENG,Civil Engineers,ENG-Civil Engineers
+172061,ENG,Computer Hardware Engineers,ENG-Computer Hardware Engineers
+172070,ENG,Electrical And Electronics Engineers,ENG-Electrical And Electronics Engineers
+172081,ENG,Environmental Engineers,ENG-Environmental Engineers
+1720XX,ENG,Biomedical And Agricultural Engineers,ENG-Biomedical And Agricultural Engineers
+172110,ENG,"Industrial Engineers, Including Health And Safety","ENG-Industrial Engineers, Including Health And Safety"
+172121,ENG,Marine Engineers And Naval Architects,ENG-Marine Engineers And Naval Architects
+172131,ENG,Materials Engineers,ENG-Materials Engineers
+172141,ENG,Mechanical Engineers,ENG-Mechanical Engineers
+1721XX,ENG,"Petroleum, Mining And Geological Engineers, Including Mining Safety Engineers","ENG-Petroleum, Mining And Geological Engineers, Including Mining Safety Engineers"
+1721YY,ENG,Other Engineers,ENG-Other Engineers
+173011,ENG,Architectural And Civil Drafters,ENG-Architectural And Civil Drafters
+17301X,ENG,Other Drafters,ENG-Other Drafters
+173023,ENG,Electrical and Electronic Engineering Technologists And Technicians,ENG-Electrical and Electronic Engineering Technologists And Technicians
+17302X,ENG,"Other Engineering Technologists And Technicians, Except Drafters","ENG-Other Engineering Technologists And Technicians, Except Drafters"
+173031,ENG,Surveying And Mapping Technicians,ENG-Surveying And Mapping Technicians
+191010,SCI,Agricultural And Food Scientists,SCI-Agricultural And Food Scientists
+191020,SCI,Biological Scientists,SCI-Biological Scientists
+191030,SCI,Conservation Scientists And Foresters,SCI-Conservation Scientists And Foresters
+1910XX,SCI,Other Life Scientists,SCI-Other Life Scientists
+192010,SCI,Astronomers And Physicists,SCI-Astronomers And Physicists
+192021,SCI,Atmospheric And Space Scientists,SCI-Atmospheric And Space Scientists
+192030,SCI,Chemists And Materials Scientists,SCI-Chemists And Materials Scientists
+192041,SCI,"Environmental Scientists And Specialists, Including Health","SCI-Environmental Scientists And Specialists, Including Health"
+19204X,SCI,"Geoscientists And Hydrologists, Except Geographers","SCI-Geoscientists And Hydrologists, Except Geographers"
+192099,SCI,"Physical Scientists, All Other","SCI-Physical Scientists, All Other"
+193011,SCI,Economists,SCI-Economists
+193033,SCI,Clinical And Counseling Psychologists,SCI-Clinical And Counseling Psychologists
+193034,SCI,School Psychologists,SCI-School Psychologists
+19303X,SCI,Other Psychologists,SCI-Other Psychologists
+193051,SCI,Urban And Regional Planners,SCI-Urban And Regional Planners
+1930XX,SCI,Other Social Scientists,SCI-Other Social Scientists
+194010,SCI,Agricultural And Food Science Technicians,SCI-Agricultural And Food Science Technicians
+194021,SCI,Biological Technicians,SCI-Biological Technicians
+194031,SCI,Chemical Technicians,SCI-Chemical Technicians
+1940XX,SCI,"Environmental Science And Geoscience Technicians, And Nuclear Technicians","SCI-Environmental Science And Geoscience Technicians, And Nuclear Technicians"
+1940YY,SCI,"Other Life, Physical, And Social Science Technicians","SCI-Other Life, Physical, And Social Science Technicians"
+195010,SCI,Occupational Health And Safety Specialists And Technicians,SCI-Occupational Health And Safety Specialists And Technicians
+211011,CMS,Substance Abuse And Behavioral Disorder Counselors,CMS-Substance Abuse And Behavioral Disorder Counselors
+211012,CMS,"Educational, Guidance, And Career Counselors And Advisors","CMS-Educational, Guidance, And Career Counselors And Advisors"
+211013,CMS,Marriage And Family Therapists,CMS-Marriage And Family Therapists
+211014,CMS,Mental Health Counselors,CMS-Mental Health Counselors
+211015,CMS,Rehabilitation Counselors,CMS-Rehabilitation Counselors
+211019,CMS,"Counselors, All Other","CMS-Counselors, All Other"
+211021,CMS,"Child, Family, And School Social Workers","CMS-Child, Family, And School Social Workers"
+211022,CMS,Healthcare Social Workers,CMS-Healthcare Social Workers
+211023,CMS,Mental Health And Substance Abuse Social Workers,CMS-Mental Health And Substance Abuse Social Workers
+211029,CMS,"Social Workers, All Other","CMS-Social Workers, All Other"
+211092,CMS,Probation Officers And Correctional Treatment Specialists,CMS-Probation Officers And Correctional Treatment Specialists
+211093,CMS,Social And Human Service Assistants,CMS-Social And Human Service Assistants
+21109X,CMS,Other Community And Social Service Specialists,CMS-Other Community And Social Service Specialists
+212011,CMS,Clergy,CMS-Clergy
+212021,CMS,"Directors, Religious Activities And Education","CMS-Directors, Religious Activities And Education"
+212099,CMS,"Religious Workers, All Other","CMS-Religious Workers, All Other"
+231012,LGL,Judicial Law Clerks,LGL-Judicial Law Clerks
+2310XX,LGL,"Lawyers, And Judges, Magistrates, And Other Judicial Workers","LGL-Lawyers, And Judges, Magistrates, And Other Judicial Workers"
+232011,LGL,Paralegals And Legal Assistants,LGL-Paralegals And Legal Assistants
+232093,LGL,"Title Examiners, Abstractors, And Searchers","LGL-Title Examiners, Abstractors, And Searchers"
+232099,LGL,"Legal Support Workers, All Other","LGL-Legal Support Workers, All Other"
+251000,EDU,Postsecondary Teachers,EDU-Postsecondary Teachers
+252010,EDU,Preschool And Kindergarten Teachers,EDU-Preschool And Kindergarten Teachers
+252020,EDU,Elementary And Middle School Teachers,EDU-Elementary And Middle School Teachers
+252030,EDU,Secondary School Teachers,EDU-Secondary School Teachers
+252050,EDU,Special Education Teachers,EDU-Special Education Teachers
+253041,EDU,Tutors,EDU-Tutors
+2530XX,EDU,Other Teachers And Instructors,EDU-Other Teachers And Instructors
+254010,EDU,"Archivists, Curators, And Museum Technicians","EDU-Archivists, Curators, And Museum Technicians"
+254022,EDU,Librarians And Media Collections Specialists,EDU-Librarians And Media Collections Specialists
+254031,EDU,Library Technicians,EDU-Library Technicians
+259040,EDU,Teaching Assistants,EDU-Teaching Assistants
+2590XX,EDU,Other Educational Instruction and Library Workers,EDU-Other Educational Instruction and Library Workers
+271010,ENT,Artists And Related Workers,ENT-Artists And Related Workers
+271021,ENT,Commercial And Industrial Designers,ENT-Commercial And Industrial Designers
+271022,ENT,Fashion Designers,ENT-Fashion Designers
+271023,ENT,Floral Designers,ENT-Floral Designers
+271024,ENT,Graphic Designers,ENT-Graphic Designers
+271025,ENT,Interior Designers,ENT-Interior Designers
+271026,ENT,Merchandise Displayers And Window Trimmers,ENT-Merchandise Displayers And Window Trimmers
+27102X,ENT,Other Designers,ENT-Other Designers
+272011,ENT,Actors,ENT-Actors
+272012,ENT,Producers And Directors,ENT-Producers And Directors
+272021,ENT,Athletes And Sports Competitors,ENT-Athletes And Sports Competitors
+272022,ENT,Coaches And Scouts,ENT-Coaches And Scouts
+272023,ENT,"Umpires, Referees, And Other Sports Officials","ENT-Umpires, Referees, And Other Sports Officials"
+272030,ENT,Dancers And Choreographers,ENT-Dancers And Choreographers
+272041,ENT,Music Directors And Composers,ENT-Music Directors And Composers
+272042,ENT,Musicians And Singers,ENT-Musicians And Singers
+272091,ENT,"Disc Jockeys, Except Radio","ENT-Disc Jockeys, Except Radio"
+272099,ENT,"Entertainers And Performers, Sports And Related Workers, All Other","ENT-Entertainers And Performers, Sports And Related Workers, All Other"
+273011,ENT,Broadcast Announcers And Radio Disc Jockeys,ENT-Broadcast Announcers And Radio Disc Jockeys
+273023,ENT,"News Analysts, Reporters, And Journalists","ENT-News Analysts, Reporters, And Journalists"
+273031,ENT,Public Relations Specialists,ENT-Public Relations Specialists
+273041,ENT,Editors,ENT-Editors
+273042,ENT,Technical Writers,ENT-Technical Writers
+273043,ENT,Writers And Authors,ENT-Writers And Authors
+273091,ENT,Interpreters And Translators,ENT-Interpreters And Translators
+273092,ENT,Court Reporters And Simultaneous Captioners,ENT-Court Reporters And Simultaneous Captioners
+273099,ENT,"Media And Communication Workers, All Other","ENT-Media And Communication Workers, All Other"
+274021,ENT,Photographers,ENT-Photographers
+274030,ENT,"Television, Video, And Film Camera Operators And Editors","ENT-Television, Video, And Film Camera Operators And Editors"
+2740XX,ENT,Other Media And Communication Equipment Workers,ENT-Other Media And Communication Equipment Workers
+291011,MED,Chiropractors,MED-Chiropractors
+291020,MED,Dentists,MED-Dentists
+291031,MED,Dietitians And Nutritionists,MED-Dietitians And Nutritionists
+291041,MED,Optometrists,MED-Optometrists
+291051,MED,Pharmacists,MED-Pharmacists
+291071,MED,Physician Assistants,MED-Physician Assistants
+291081,MED,Podiatrists,MED-Podiatrists
+291122,MED,Occupational Therapists,MED-Occupational Therapists
+291123,MED,Physical Therapists,MED-Physical Therapists
+291124,MED,Radiation Therapists,MED-Radiation Therapists
+291125,MED,Recreational Therapists,MED-Recreational Therapists
+291126,MED,Respiratory Therapists,MED-Respiratory Therapists
+291127,MED,Speech-Language Pathologists,MED-Speech-Language Pathologists
+29112X,MED,Other Therapists,MED-Other Therapists
+291131,MED,Veterinarians,MED-Veterinarians
+291141,MED,Registered Nurses,MED-Registered Nurses
+291151,MED,Nurse Anesthetists,MED-Nurse Anesthetists
+291181,MED,Audiologists,MED-Audiologists
+2911XX,MED,"Nurse Practitioners, And Nurse Midwives","MED-Nurse Practitioners, And Nurse Midwives"
+291210,MED,Physicians,MED-Physicians
+291240,MED,Surgeons,MED-Surgeons
+291291,MED,Acupuncturists,MED-Acupuncturists
+291292,MED,Dental Hygienists,MED-Dental Hygienists
+291299,MED,"Healthcare Diagnosing Or Treating Practitioners, All Other","MED-Healthcare Diagnosing Or Treating Practitioners, All Other"
+292010,MED,Clinical Laboratory Technologists And Technicians,MED-Clinical Laboratory Technologists And Technicians
+292031,MED,Cardiovascular Technologists And Technicians,MED-Cardiovascular Technologists And Technicians
+292032,MED,Diagnostic Medical Sonographers,MED-Diagnostic Medical Sonographers
+292034,MED,Radiologic Technologists And Technicians,MED-Radiologic Technologists And Technicians
+292035,MED,Magnetic Resonance Imaging Technologists,MED-Magnetic Resonance Imaging Technologists
+29203X,MED,Nuclear Medicine Technologists And Medical Dosimetrists,MED-Nuclear Medicine Technologists And Medical Dosimetrists
+292042,MED,Emergency Medical Technicians,MED-Emergency Medical Technicians
+292043,MED,Paramedics,MED-Paramedics
+292052,MED,Pharmacy Technicians,MED-Pharmacy Technicians
+292053,MED,Psychiatric Technicians,MED-Psychiatric Technicians
+292055,MED,Surgical Technologists,MED-Surgical Technologists
+292056,MED,Veterinary Technologists And Technicians,MED-Veterinary Technologists And Technicians
+29205X,MED,Dietetic Technicians And Ophthalmic Medical Technicians,MED-Dietetic Technicians And Ophthalmic Medical Technicians
+292061,MED,Licensed Practical And Licensed Vocational Nurses,MED-Licensed Practical And Licensed Vocational Nurses
+292072,MED,Medical Records Specialists,MED-Medical Records Specialists
+292081,MED,"Opticians, Dispensing","MED-Opticians, Dispensing"
+292090,MED,Miscellaneous Health Technologists And Technicians,MED-Miscellaneous Health Technologists And Technicians
+299000,MED,Other Healthcare Practitioners And Technical Occupations,MED-Other Healthcare Practitioners And Technical Occupations
+311121,HLS,Home Health Aides,HLS-Home Health Aides
+311122,HLS,Personal Care Aides,HLS-Personal Care Aides
+311131,HLS,Nursing Assistants,HLS-Nursing Assistants
+31113X,HLS,Orderlies And Psychiatric Aides,HLS-Orderlies And Psychiatric Aides
+312010,HLS,Occupational Therapy Assistants And Aides,HLS-Occupational Therapy Assistants And Aides
+312020,HLS,Physical Therapist Assistants And Aides,HLS-Physical Therapist Assistants And Aides
+319011,HLS,Massage Therapists,HLS-Massage Therapists
+319091,HLS,Dental Assistants,HLS-Dental Assistants
+319092,HLS,Medical Assistants,HLS-Medical Assistants
+319094,HLS,Medical Transcriptionists,HLS-Medical Transcriptionists
+319095,HLS,Pharmacy Aides,HLS-Pharmacy Aides
+319096,HLS,Veterinary Assistants And Laboratory Animal Caretakers,HLS-Veterinary Assistants And Laboratory Animal Caretakers
+319097,HLS,Phlebotomists,HLS-Phlebotomists
+31909X,HLS,Other Healthcare Support Workers,HLS-Other Healthcare Support Workers
+331011,PRT,First-Line Supervisors Of Correctional Officers,PRT-First-Line Supervisors Of Correctional Officers
+331012,PRT,First-Line Supervisors Of Police And Detectives,PRT-First-Line Supervisors Of Police And Detectives
+331021,PRT,First-Line Supervisors Of Firefighting And Prevention Workers,PRT-First-Line Supervisors Of Firefighting And Prevention Workers
+331090,PRT,"Miscellaneous First-Line Supervisors, Protective Service Workers","PRT-Miscellaneous First-Line Supervisors, Protective Service Workers"
+332011,PRT,Firefighters,PRT-Firefighters
+332020,PRT,Fire Inspectors,PRT-Fire Inspectors
+333011,PRT,Bailiffs,PRT-Bailiffs
+333012,PRT,Correctional Officers And Jailers,PRT-Correctional Officers And Jailers
+333021,PRT,Detectives And Criminal Investigators,PRT-Detectives And Criminal Investigators
+333050,PRT,Police Officers,PRT-Police Officers
+3330XX,PRT,Fish And Game Wardens And Parking Enforcement Officers,PRT-Fish And Game Wardens And Parking Enforcement Officers
+339011,PRT,Animal Control Workers,PRT-Animal Control Workers
+339021,PRT,Private Detectives And Investigators,PRT-Private Detectives And Investigators
+339030,PRT,Security Guards And Gambling Surveillance Officers,PRT-Security Guards And Gambling Surveillance Officers
+339091,PRT,Crossing Guards And Flaggers,PRT-Crossing Guards And Flaggers
+339093,PRT,Transportation Security Screeners,PRT-Transportation Security Screeners
+339094,PRT,School Bus Monitors,PRT-School Bus Monitors
+33909X,PRT,Other Protective Service Workers,PRT-Other Protective Service Workers
+351011,EAT,Chefs And Head Cooks,EAT-Chefs And Head Cooks
+351012,EAT,First-Line Supervisors Of Food Preparation And Serving Workers,EAT-First-Line Supervisors Of Food Preparation And Serving Workers
+352010,EAT,Cooks,EAT-Cooks
+352021,EAT,Food Preparation Workers,EAT-Food Preparation Workers
+353011,EAT,Bartenders,EAT-Bartenders
+353023,EAT,Fast Food And Counter Workers,EAT-Fast Food And Counter Workers
+353031,EAT,Waiters And Waitresses,EAT-Waiters And Waitresses
+353041,EAT,"Food Servers, Nonrestaurant","EAT-Food Servers, Nonrestaurant"
+359011,EAT,Dining Room And Cafeteria Attendants And Bartender Helpers,EAT-Dining Room And Cafeteria Attendants And Bartender Helpers
+359021,EAT,Dishwashers,EAT-Dishwashers
+359031,EAT,"Hosts And Hostesses, Restaurant, Lounge, And Coffee Shop","EAT-Hosts And Hostesses, Restaurant, Lounge, And Coffee Shop"
+359099,EAT,"Food Preparation And Serving Related Workers, All Other","EAT-Food Preparation And Serving Related Workers, All Other"
+371011,CLN,First-Line Supervisors Of Housekeeping And Janitorial Workers,CLN-First-Line Supervisors Of Housekeeping And Janitorial Workers
+371012,CLN,"First-Line Supervisors Of Landscaping, Lawn Service, And Groundskeeping Workers","CLN-First-Line Supervisors Of Landscaping, Lawn Service, And Groundskeeping Workers"
+372012,CLN,Maids And Housekeeping Cleaners,CLN-Maids And Housekeeping Cleaners
+37201X,CLN,Janitors And Building Cleaners,CLN-Janitors And Building Cleaners
+372021,CLN,Pest Control Workers,CLN-Pest Control Workers
+373011,CLN,Landscaping And Groundskeeping Workers,CLN-Landscaping And Groundskeeping Workers
+373013,CLN,Tree Trimmers And Pruners,CLN-Tree Trimmers And Pruners
+37301X,CLN,Other Grounds Maintenance Workers,CLN-Other Grounds Maintenance Workers
+391000,PRS,Supervisors of Personal Care And Service Workers,PRS-Supervisors of Personal Care And Service Workers
+392011,PRS,Animal Trainers,PRS-Animal Trainers
+392021,PRS,Animal Caretakers,PRS-Animal Caretakers
+393010,PRS,Gambling Services Workers,PRS-Gambling Services Workers
+393031,PRS,"Ushers, Lobby Attendants, And Ticket Takers","PRS-Ushers, Lobby Attendants, And Ticket Takers"
+3930XX,PRS,Other Entertainment Attendants And Related Workers,PRS-Other Entertainment Attendants And Related Workers
+394031,PRS,"Morticians, Undertakers, And Funeral Arrangers","PRS-Morticians, Undertakers, And Funeral Arrangers"
+3940XX,PRS,"Embalmers, Crematory Operators And Funeral Attendants","PRS-Embalmers, Crematory Operators And Funeral Attendants"
+395011,PRS,Barbers,PRS-Barbers
+395012,PRS,"Hairdressers, Hairstylists, And Cosmetologists","PRS-Hairdressers, Hairstylists, And Cosmetologists"
+395092,PRS,Manicurists and Pedicurists,PRS-Manicurists and Pedicurists
+395094,PRS,Skincare Specialists,PRS-Skincare Specialists
+39509X,PRS,Other Personal Appearance Workers,PRS-Other Personal Appearance Workers
+396010,PRS,"Baggage Porters, Bellhops, And Concierges","PRS-Baggage Porters, Bellhops, And Concierges"
+397010,PRS,Tour And Travel Guides,PRS-Tour And Travel Guides
+399011,PRS,Childcare Workers,PRS-Childcare Workers
+399031,PRS,Exercise Trainers And Group Fitness Instructors,PRS-Exercise Trainers And Group Fitness Instructors
+399032,PRS,Recreation Workers,PRS-Recreation Workers
+399041,PRS,Residential Advisors,PRS-Residential Advisors
+399099,PRS,"Personal Care And Service Workers, All Other","PRS-Personal Care And Service Workers, All Other"
+411011,SAL,First-Line Supervisors Of Retail Sales Workers,SAL-First-Line Supervisors Of Retail Sales Workers
+411012,SAL,First-Line Supervisors Of Non-Retail Sales Workers,SAL-First-Line Supervisors Of Non-Retail Sales Workers
+412010,SAL,Cashiers,SAL-Cashiers
+412021,SAL,Counter And Rental Clerks,SAL-Counter And Rental Clerks
+412022,SAL,Parts Salespersons,SAL-Parts Salespersons
+412031,SAL,Retail Salespersons,SAL-Retail Salespersons
+413011,SAL,Advertising Sales Agents,SAL-Advertising Sales Agents
+413021,SAL,Insurance Sales Agents,SAL-Insurance Sales Agents
+413031,SAL,"Securities, Commodities, And Financial Services Sales Agents","SAL-Securities, Commodities, And Financial Services Sales Agents"
+413041,SAL,Travel Agents,SAL-Travel Agents
+413091,SAL,"Sales Representatives Of Services, Except Advertising, Insurance, Financial Services, And Travel","SAL-Sales Representatives Of Services, Except Advertising, Insurance, Financial Services, And Travel"
+414010,SAL,"Sales Representatives, Wholesale And Manufacturing","SAL-Sales Representatives, Wholesale And Manufacturing"
+419010,SAL,"Models, Demonstrators, And Product Promoters","SAL-Models, Demonstrators, And Product Promoters"
+419020,SAL,Real Estate Brokers And Sales Agents,SAL-Real Estate Brokers And Sales Agents
+419031,SAL,Sales Engineers,SAL-Sales Engineers
+419041,SAL,Telemarketers,SAL-Telemarketers
+419091,SAL,"Door-To-Door Sales Workers, News And Street Vendors, And Related Workers","SAL-Door-To-Door Sales Workers, News And Street Vendors, And Related Workers"
+419099,SAL,"Sales And Related Workers, All Other","SAL-Sales And Related Workers, All Other"
+431011,OFF,First-Line Supervisors Of Office And Administrative Support Workers,OFF-First-Line Supervisors Of Office And Administrative Support Workers
+432011,OFF,"Switchboard Operators, Including Answering Service","OFF-Switchboard Operators, Including Answering Service"
+432021,OFF,Telephone Operators,OFF-Telephone Operators
+432099,OFF,"Communications Equipment Operators, All Other","OFF-Communications Equipment Operators, All Other"
+433011,OFF,Bill And Account Collectors,OFF-Bill And Account Collectors
+433021,OFF,Billing And Posting Clerks,OFF-Billing And Posting Clerks
+433031,OFF,"Bookkeeping, Accounting, And Auditing Clerks","OFF-Bookkeeping, Accounting, And Auditing Clerks"
+433051,OFF,Payroll And Timekeeping Clerks,OFF-Payroll And Timekeeping Clerks
+433061,OFF,Procurement Clerks,OFF-Procurement Clerks
+433071,OFF,Tellers,OFF-Tellers
+4330XX,OFF,Other Financial Clerks,OFF-Other Financial Clerks
+434031,OFF,"Court, Municipal, And License Clerks","OFF-Court, Municipal, And License Clerks"
+434041,OFF,"Credit Authorizers, Checkers, And Clerks","OFF-Credit Authorizers, Checkers, And Clerks"
+434051,OFF,Customer Service Representatives,OFF-Customer Service Representatives
+434061,OFF,"Eligibility Interviewers, Government Programs","OFF-Eligibility Interviewers, Government Programs"
+434071,OFF,File Clerks,OFF-File Clerks
+434081,OFF,"Hotel, Motel, And Resort Desk Clerks","OFF-Hotel, Motel, And Resort Desk Clerks"
+434111,OFF,"Interviewers, Except Eligibility And Loan","OFF-Interviewers, Except Eligibility And Loan"
+434121,OFF,"Library Assistants, Clerical","OFF-Library Assistants, Clerical"
+434131,OFF,Loan Interviewers And Clerks,OFF-Loan Interviewers And Clerks
+434141,OFF,New Accounts Clerks,OFF-New Accounts Clerks
+434161,OFF,"Human Resources Assistants, Except Payroll And Timekeeping","OFF-Human Resources Assistants, Except Payroll And Timekeeping"
+434171,OFF,Receptionists And Information Clerks,OFF-Receptionists And Information Clerks
+434181,OFF,Reservation And Transportation Ticket Agents And Travel Clerks,OFF-Reservation And Transportation Ticket Agents And Travel Clerks
+434XXX,OFF,Correspondence Clerks And Order Clerks,OFF-Correspondence Clerks And Order Clerks
+434YYY,OFF,Other Information And Records Clerks,OFF-Other Information And Records Clerks
+435011,OFF,Cargo And Freight Agents,OFF-Cargo And Freight Agents
+435021,OFF,Couriers And Messengers,OFF-Couriers And Messengers
+435031,OFF,Public Safety Telecommunicators,OFF-Public Safety Telecommunicators
+435032,OFF,"Dispatchers, Except Police, Fire, And Ambulance","OFF-Dispatchers, Except Police, Fire, And Ambulance"
+435041,OFF,"Meter Readers, Utilities","OFF-Meter Readers, Utilities"
+435051,OFF,Postal Service Clerks,OFF-Postal Service Clerks
+435052,OFF,Postal Service Mail Carriers,OFF-Postal Service Mail Carriers
+435053,OFF,"Postal Service Mail Sorters, Processors, And Processing Machine Operators","OFF-Postal Service Mail Sorters, Processors, And Processing Machine Operators"
+435061,OFF,"Production, Planning, And Expediting Clerks","OFF-Production, Planning, And Expediting Clerks"
+435071,OFF,"Shipping, Receiving, And Inventory Clerks","OFF-Shipping, Receiving, And Inventory Clerks"
+435111,OFF,"Weighers, Measurers, Checkers, And Samplers, Recordkeeping","OFF-Weighers, Measurers, Checkers, And Samplers, Recordkeeping"
+436011,OFF,Executive Secretaries And Executive Administrative Assistants,OFF-Executive Secretaries And Executive Administrative Assistants
+436012,OFF,Legal Secretaries And Administrative Assistants,OFF-Legal Secretaries And Administrative Assistants
+436013,OFF,Medical Secretaries And Administrative Assistants,OFF-Medical Secretaries And Administrative Assistants
+436014,OFF,"Secretaries And Administrative Assistants, Except Legal, Medical, And Executive","OFF-Secretaries And Administrative Assistants, Except Legal, Medical, And Executive"
+439021,OFF,Data Entry Keyers,OFF-Data Entry Keyers
+439022,OFF,Word Processors And Typists,OFF-Word Processors And Typists
+439041,OFF,Insurance Claims And Policy Processing Clerks,OFF-Insurance Claims And Policy Processing Clerks
+439051,OFF,"Mail Clerks And Mail Machine Operators, Except Postal Service","OFF-Mail Clerks And Mail Machine Operators, Except Postal Service"
+439061,OFF,"Office Clerks, General","OFF-Office Clerks, General"
+439071,OFF,"Office Machine Operators, Except Computer","OFF-Office Machine Operators, Except Computer"
+439081,OFF,Proofreaders And Copy Markers,OFF-Proofreaders And Copy Markers
+439111,OFF,Statistical Assistants,OFF-Statistical Assistants
+439XXX,OFF,Other Office And Administrative Support Workers,OFF-Other Office And Administrative Support Workers
+451011,FFF,"First-Line Supervisors Of Farming, Fishing, And Forestry Workers","FFF-First-Line Supervisors Of Farming, Fishing, And Forestry Workers"
+452011,FFF,Agricultural Inspectors,FFF-Agricultural Inspectors
+452041,FFF,"Graders And Sorters, Agricultural Products","FFF-Graders And Sorters, Agricultural Products"
+4520XX,FFF,Other Agricultural Workers,FFF-Other Agricultural Workers
+453031,FFF,Fishing And Hunting Workers,FFF-Fishing And Hunting Workers
+454011,FFF,Forest And Conservation Workers,FFF-Forest And Conservation Workers
+454020,FFF,Logging Workers,FFF-Logging Workers
+471011,CON,First-Line Supervisors Of Construction Trades And Extraction Workers,CON-First-Line Supervisors Of Construction Trades And Extraction Workers
+472011,CON,Boilermakers,CON-Boilermakers
+472031,CON,Carpenters,CON-Carpenters
+472040,CON,"Carpet, Floor, And Tile Installers And Finishers","CON-Carpet, Floor, And Tile Installers And Finishers"
+472050,CON,"Cement Masons, Concrete Finishers, And Terrazzo Workers","CON-Cement Masons, Concrete Finishers, And Terrazzo Workers"
+472061,CON,Construction Laborers,CON-Construction Laborers
+472070,CON,Construction Equipment Operators,CON-Construction Equipment Operators
+472080,CON,"Drywall Installers, Ceiling Tile Installers, And Tapers","CON-Drywall Installers, Ceiling Tile Installers, And Tapers"
+472111,CON,Electricians,CON-Electricians
+472121,CON,Glaziers,CON-Glaziers
+472130,CON,Insulation Workers,CON-Insulation Workers
+472140,CON,Painters And Paperhangers,CON-Painters And Paperhangers
+472151,CON,Pipelayers,CON-Pipelayers
+472152,CON,"Plumbers, Pipefitters, And Steamfitters","CON-Plumbers, Pipefitters, And Steamfitters"
+472161,CON,Plasterers And Stucco Masons,CON-Plasterers And Stucco Masons
+472181,CON,Roofers,CON-Roofers
+472211,CON,Sheet Metal Workers,CON-Sheet Metal Workers
+472221,CON,Structural Iron And Steel Workers,CON-Structural Iron And Steel Workers
+472231,CON,Solar Photovoltaic Installers,CON-Solar Photovoltaic Installers
+472XXX,CON,"Brickmasons, Blockmasons, Stonemasons, And Reinforcing Iron And Rebar Workers","CON-Brickmasons, Blockmasons, Stonemasons, And Reinforcing Iron And Rebar Workers"
+473010,CON,"Helpers, Construction Trades","CON-Helpers, Construction Trades"
+474011,CON,Construction And Building Inspectors,CON-Construction And Building Inspectors
+474021,CON,Elevator And Escalator Installers And Repairers,CON-Elevator And Escalator Installers And Repairers
+474031,CON,Fence Erectors,CON-Fence Erectors
+474041,CON,Hazardous Materials Removal Workers,CON-Hazardous Materials Removal Workers
+474051,CON,Highway Maintenance Workers,CON-Highway Maintenance Workers
+474061,CON,Rail-Track Laying And Maintenance Equipment Operators,CON-Rail-Track Laying And Maintenance Equipment Operators
+4740XX,CON,Other Construction And Related Workers,CON-Other Construction And Related Workers
+475020,EXT,Surface Mining Machine Operators And Earth Drillers,EXT-Surface Mining Machine Operators And Earth Drillers
+475032,EXT,"Explosives Workers, Ordnance Handling Experts, And Blasters","EXT-Explosives Workers, Ordnance Handling Experts, And Blasters"
+475040,EXT,Underground Mining Machine Operators,EXT-Underground Mining Machine Operators
+4750XX,EXT,Other Extraction Workers,EXT-Other Extraction Workers
+4750YY,EXT,"Derrick, Rotary Drill, And Service Unit Operators, And Roustabouts, Oil And Gas","EXT-Derrick, Rotary Drill, And Service Unit Operators, And Roustabouts, Oil And Gas"
+491011,RPR,"First-Line Supervisors Of Mechanics, Installers, And Repairers","RPR-First-Line Supervisors Of Mechanics, Installers, And Repairers"
+492011,RPR,"Computer, Automated Teller, And Office Machine Repairers","RPR-Computer, Automated Teller, And Office Machine Repairers"
+492020,RPR,Radio And Telecommunications Equipment Installers And Repairers,RPR-Radio And Telecommunications Equipment Installers And Repairers
+492091,RPR,Avionics Technicians,RPR-Avionics Technicians
+492092,RPR,"Electric Motor, Power Tool, And Related Repairers","RPR-Electric Motor, Power Tool, And Related Repairers"
+492097,RPR,Audiovisual Equipment Installers And Repairers,RPR-Audiovisual Equipment Installers And Repairers
+492098,RPR,Security And Fire Alarm Systems Installers,RPR-Security And Fire Alarm Systems Installers
+49209X,RPR,"Other Electrical And Electronic Equipment Mechanics, Installers, and Repairers","RPR-Other Electrical And Electronic Equipment Mechanics, Installers, and Repairers"
+493011,RPR,Aircraft Mechanics And Service Technicians,RPR-Aircraft Mechanics And Service Technicians
+493021,RPR,Automotive Body And Related Repairers,RPR-Automotive Body And Related Repairers
+493022,RPR,Automotive Glass Installers And Repairers,RPR-Automotive Glass Installers And Repairers
+493023,RPR,Automotive Service Technicians And Mechanics,RPR-Automotive Service Technicians And Mechanics
+493031,RPR,Bus And Truck Mechanics And Diesel Engine Specialists,RPR-Bus And Truck Mechanics And Diesel Engine Specialists
+493040,RPR,Heavy Vehicle And Mobile Equipment Service Technicians And Mechanics,RPR-Heavy Vehicle And Mobile Equipment Service Technicians And Mechanics
+493050,RPR,Small Engine Mechanics,RPR-Small Engine Mechanics
+493090,RPR,"Miscellaneous Vehicle And Mobile Equipment Mechanics, Installers, And Repairers","RPR-Miscellaneous Vehicle And Mobile Equipment Mechanics, Installers, And Repairers"
+499010,RPR,Control And Valve Installers And Repairers,RPR-Control And Valve Installers And Repairers
+499021,RPR,"Heating, Air Conditioning, And Refrigeration Mechanics And Installers","RPR-Heating, Air Conditioning, And Refrigeration Mechanics And Installers"
+499031,RPR,Home Appliance Repairers,RPR-Home Appliance Repairers
+499043,RPR,"Maintenance Workers, Machinery","RPR-Maintenance Workers, Machinery"
+499044,RPR,Millwrights,RPR-Millwrights
+49904X,RPR,Industrial And Refractory Machinery Mechanics,RPR-Industrial And Refractory Machinery Mechanics
+499051,RPR,Electrical Power-Line Installers And Repairers,RPR-Electrical Power-Line Installers And Repairers
+499052,RPR,Telecommunications Line Installers And Repairers,RPR-Telecommunications Line Installers And Repairers
+499060,RPR,Precision Instrument And Equipment Repairers,RPR-Precision Instrument And Equipment Repairers
+499071,RPR,"Maintenance And Repair Workers, General","RPR-Maintenance And Repair Workers, General"
+499091,RPR,"Coin, Vending, And Amusement Machine Servicers And Repairers","RPR-Coin, Vending, And Amusement Machine Servicers And Repairers"
+499094,RPR,Locksmiths And Safe Repairers,RPR-Locksmiths And Safe Repairers
+499096,RPR,Riggers,RPR-Riggers
+499098,RPR,"Helpers--Installation, Maintenance, And Repair Workers","RPR-Helpers--Installation, Maintenance, And Repair Workers"
+4990XX,RPR,"Other Installation, Maintenance, And Repair Workers","RPR-Other Installation, Maintenance, And Repair Workers"
+511011,PRD,First-Line Supervisors Of Production And Operating Workers,PRD-First-Line Supervisors Of Production And Operating Workers
+512020,PRD,"Electrical, Electronics, And Electromechanical Assemblers","PRD-Electrical, Electronics, And Electromechanical Assemblers"
+512031,PRD,Engine And Other Machine Assemblers,PRD-Engine And Other Machine Assemblers
+512041,PRD,Structural Metal Fabricators And Fitters,PRD-Structural Metal Fabricators And Fitters
+5120XX,PRD,Other Assemblers and Fabricators,PRD-Other Assemblers and Fabricators
+513011,PRD,Bakers,PRD-Bakers
+513020,PRD,"Butchers And Other Meat, Poultry, And Fish Processing Workers","PRD-Butchers And Other Meat, Poultry, And Fish Processing Workers"
+513091,PRD,"Food And Tobacco Roasting, Baking, And Drying Machine Operators And Tenders","PRD-Food And Tobacco Roasting, Baking, And Drying Machine Operators And Tenders"
+513092,PRD,Food Batchmakers,PRD-Food Batchmakers
+513093,PRD,Food Cooking Machine Operators And Tenders,PRD-Food Cooking Machine Operators And Tenders
+513099,PRD,"Food Processing Workers, All Other","PRD-Food Processing Workers, All Other"
+514020,PRD,"Forming Machine Setters, Operators, And Tenders, Metal And Plastic","PRD-Forming Machine Setters, Operators, And Tenders, Metal And Plastic"
+514031,PRD,"Cutting, Punching, And Press Machine Setters, Operators, And Tenders, Metal And Plastic","PRD-Cutting, Punching, And Press Machine Setters, Operators, And Tenders, Metal And Plastic"
+514033,PRD,"Grinding, Lapping, Polishing, And Buffing Machine Tool Setters, Operators, And Tenders, Metal and Plastic","PRD-Grinding, Lapping, Polishing, And Buffing Machine Tool Setters, Operators, And Tenders, Metal and Plastic"
+51403X,PRD,"Other Machine Tool Setters, Operators, And Tenders, Metal And Plastic","PRD-Other Machine Tool Setters, Operators, And Tenders, Metal And Plastic"
+514041,PRD,Machinists,PRD-Machinists
+514050,PRD,"Metal Furnace Operators, Tenders, Pourers, And Casters","PRD-Metal Furnace Operators, Tenders, Pourers, And Casters"
+5140XX,PRD,"Model Makers, Patternmakers, And Molding Machine Setters, Metal And Plastic","PRD-Model Makers, Patternmakers, And Molding Machine Setters, Metal And Plastic"
+514111,PRD,Tool And Die Makers,PRD-Tool And Die Makers
+514120,PRD,"Welding, Soldering, And Brazing Workers","PRD-Welding, Soldering, And Brazing Workers"
+514XXX,PRD,Other Metal Workers And Plastic Workers,PRD-Other Metal Workers And Plastic Workers
+515111,PRD,Prepress Technicians And Workers,PRD-Prepress Technicians And Workers
+515112,PRD,Printing Press Operators,PRD-Printing Press Operators
+515113,PRD,Print Binding And Finishing Workers,PRD-Print Binding And Finishing Workers
+516011,PRD,Laundry And Dry-Cleaning Workers,PRD-Laundry And Dry-Cleaning Workers
+516021,PRD,"Pressers, Textile, Garment, And Related Materials","PRD-Pressers, Textile, Garment, And Related Materials"
+516031,PRD,Sewing Machine Operators,PRD-Sewing Machine Operators
+516040,PRD,Shoe And Leather Workers,PRD-Shoe And Leather Workers
+516050,PRD,"Tailors, Dressmakers, And Sewers","PRD-Tailors, Dressmakers, And Sewers"
+516060,PRD,"Textile Machine Setters, Operators, And Tenders","PRD-Textile Machine Setters, Operators, And Tenders"
+516093,PRD,Upholsterers,PRD-Upholsterers
+51609X,PRD,"Other Textile, Apparel, And Furnishings Workers","PRD-Other Textile, Apparel, And Furnishings Workers"
+517011,PRD,Cabinetmakers And Bench Carpenters,PRD-Cabinetmakers And Bench Carpenters
+517021,PRD,Furniture Finishers,PRD-Furniture Finishers
+517041,PRD,"Sawing Machine Setters, Operators, And Tenders, Wood","PRD-Sawing Machine Setters, Operators, And Tenders, Wood"
+517042,PRD,"Woodworking Machine Setters, Operators, And Tenders, Except Sawing","PRD-Woodworking Machine Setters, Operators, And Tenders, Except Sawing"
+5170XX,PRD,Other Woodworkers,PRD-Other Woodworkers
+518010,PRD,"Power Plant Operators, Distributors, And Dispatchers","PRD-Power Plant Operators, Distributors, And Dispatchers"
+518021,PRD,Stationary Engineers And Boiler Operators,PRD-Stationary Engineers And Boiler Operators
+518031,PRD,Water And Wastewater Treatment Plant And System Operators,PRD-Water And Wastewater Treatment Plant And System Operators
+518090,PRD,Miscellaneous Plant And System Operators,PRD-Miscellaneous Plant And System Operators
+519010,PRD,"Chemical Processing Machine Setters, Operators, And Tenders","PRD-Chemical Processing Machine Setters, Operators, And Tenders"
+519020,PRD,"Crushing, Grinding, Polishing, Mixing, And Blending Workers","PRD-Crushing, Grinding, Polishing, Mixing, And Blending Workers"
+519030,PRD,Cutting Workers,PRD-Cutting Workers
+519041,PRD,"Extruding, Forming, Pressing, And Compacting Machine Setters, Operators, And Tenders","PRD-Extruding, Forming, Pressing, And Compacting Machine Setters, Operators, And Tenders"
+519051,PRD,"Furnace, Kiln, Oven, Drier, And Kettle Operators And Tenders","PRD-Furnace, Kiln, Oven, Drier, And Kettle Operators And Tenders"
+519061,PRD,"Inspectors, Testers, Sorters, Samplers, And Weighers","PRD-Inspectors, Testers, Sorters, Samplers, And Weighers"
+519071,PRD,Jewelers And Precious Stone And Metal Workers,PRD-Jewelers And Precious Stone And Metal Workers
+519080,PRD,Dental And Ophthalmic Laboratory Technicians And Medical Appliance Technicians,PRD-Dental And Ophthalmic Laboratory Technicians And Medical Appliance Technicians
+519111,PRD,Packaging And Filling Machine Operators And Tenders,PRD-Packaging And Filling Machine Operators And Tenders
+519120,PRD,Painting Workers,PRD-Painting Workers
+519151,PRD,Photographic Process Workers And Processing Machine Operators,PRD-Photographic Process Workers And Processing Machine Operators
+519160,PRD,Computer Numerically Controlled Tool Operators And Programmers,PRD-Computer Numerically Controlled Tool Operators And Programmers
+519191,PRD,Adhesive Bonding Machine Operators And Tenders,PRD-Adhesive Bonding Machine Operators And Tenders
+519194,PRD,Etchers And Engravers,PRD-Etchers And Engravers
+519195,PRD,"Molders, Shapers, And Casters, Except Metal And Plastic","PRD-Molders, Shapers, And Casters, Except Metal And Plastic"
+519196,PRD,"Paper Goods Machine Setters, Operators, And Tenders","PRD-Paper Goods Machine Setters, Operators, And Tenders"
+519197,PRD,Tire Builders,PRD-Tire Builders
+519198,PRD,Helpers--Production Workers,PRD-Helpers--Production Workers
+5191XX,PRD,"Miscellaneous Production Workers, Including Equipment Operators and Tenders","PRD-Miscellaneous Production Workers, Including Equipment Operators and Tenders"
+531000,TRN,Supervisors Of Transportation And Material Moving Workers,TRN-Supervisors Of Transportation And Material Moving Workers
+532010,TRN,Aircraft Pilots And Flight Engineers,TRN-Aircraft Pilots And Flight Engineers
+532020,TRN,Air Traffic Controllers And Airfield Operations Specialists,TRN-Air Traffic Controllers And Airfield Operations Specialists
+532031,TRN,Flight Attendants,TRN-Flight Attendants
+533011,TRN,"Ambulance Drivers And Attendants, Except Emergency Medical Technicians","TRN-Ambulance Drivers And Attendants, Except Emergency Medical Technicians"
+533030,TRN,Driver/Sales Workers And Truck Drivers,TRN-Driver/Sales Workers And Truck Drivers
+533051,TRN,"Bus Drivers, School","TRN-Bus Drivers, School"
+533052,TRN,"Bus Drivers, Transit And Intercity","TRN-Bus Drivers, Transit And Intercity"
+533053,TRN,Shuttle Drivers and Chauffeurs,TRN-Shuttle Drivers and Chauffeurs
+533054,TRN,Taxi Drivers,TRN-Taxi Drivers
+533099,TRN,"Motor Vehicle Operators, All Other","TRN-Motor Vehicle Operators, All Other"
+534010,TRN,Locomotive Engineers And Operators,TRN-Locomotive Engineers And Operators
+534031,TRN,Railroad Conductors And Yardmasters,TRN-Railroad Conductors And Yardmasters
+5340XX,TRN,Other Rail Transportation Workers,TRN-Other Rail Transportation Workers
+535020,TRN,Ship And Boat Captains And Operators,TRN-Ship And Boat Captains And Operators
+5350XX,TRN,"Sailors And Marine Oilers, And Ship Engineers","TRN-Sailors And Marine Oilers, And Ship Engineers"
+536021,TRN,Parking Attendants,TRN-Parking Attendants
+536030,TRN,Transportation Service Attendants,TRN-Transportation Service Attendants
+536051,TRN,Transportation Inspectors,TRN-Transportation Inspectors
+536061,TRN,Passenger Attendants,TRN-Passenger Attendants
+5360XX,TRN,Other Transportation Workers,TRN-Other Transportation Workers
+537021,TRN,Crane And Tower Operators,TRN-Crane And Tower Operators
+537051,TRN,Industrial Truck And Tractor Operators,TRN-Industrial Truck And Tractor Operators
+537061,TRN,Cleaners Of Vehicles And Equipment,TRN-Cleaners Of Vehicles And Equipment
+537062,TRN,"Laborers And Freight, Stock, And Material Movers, Hand","TRN-Laborers And Freight, Stock, And Material Movers, Hand"
+537063,TRN,Machine Feeders And Offbearers,TRN-Machine Feeders And Offbearers
+537064,TRN,"Packers And Packagers, Hand","TRN-Packers And Packagers, Hand"
+537065,TRN,Stockers And Order Fillers,TRN-Stockers And Order Fillers
+537070,TRN,Pumping Station Operators,TRN-Pumping Station Operators
+537081,TRN,Refuse And Recyclable Material Collectors,TRN-Refuse And Recyclable Material Collectors
+5370XX,TRN,"Conveyor, Dredge, And Hoist And Winch Operators","TRN-Conveyor, Dredge, And Hoist And Winch Operators"
+5371XX,TRN,Other Material Moving Workers,TRN-Other Material Moving Workers
+551010,MIL,Military Officer Special And Tactical Operations Leaders,MIL-Military Officer Special And Tactical Operations Leaders
+552010,MIL,First-Line Enlisted Military Supervisors,MIL-First-Line Enlisted Military Supervisors
+553010,MIL,Military Enlisted Tactical Operations And Air/Weapons Specialists And Crew Members,MIL-Military Enlisted Tactical Operations And Air/Weapons Specialists And Crew Members
+559830,MIL,"Military, Rank Not Specified","MIL-Military, Rank Not Specified"
+999920,,"Unemployed, With No Work Experience In The Last 5 Years Or Earlier Or Never Worked","Unemployed, With No Work Experience In The Last 5 Years Or Earlier Or Never Worked"
+N,,N/A (less than 16 years old/NILF who last worked more than 5 years ago or never worked),N/A (less than 16 years old/NILF who last worked more than 5 years ago or never worked)

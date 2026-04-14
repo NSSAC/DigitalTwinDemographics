@@ -163,11 +163,31 @@ def find_pop_in_polygons(config, pop_gdf, polygons_gdf):
     return pop_in_polygons
 
 def count_population_by_category(pop_in_polygons, category_columns):
-    # Count population by specified category
+    # Count population by specified category.
     category_counts = pop_in_polygons.groupby(category_columns)['pid'].count().reset_index()
-    category_counts.columns = category_columns+['subpop_size']
+    category_counts.columns = category_columns + ['subpop_size']
+
+    # Add percentage breakdown: within the first grouping column if present,
+    # otherwise as a share of the full table.
+    if len(category_columns) > 1:
+        parent_col = category_columns[0]
+        group_totals = category_counts.groupby(parent_col)['subpop_size'].transform('sum')
+        category_counts['subpop_pct'] = (category_counts['subpop_size'] / group_totals * 100).round(1)
+    else:
+        total = category_counts['subpop_size'].sum()
+        category_counts['subpop_pct'] = (category_counts['subpop_size'] / total * 100).round(1)
 
     return category_counts
+
+
+def load_socp_description_map(csv_path):
+    """Load SOCP code-to-description mapping from a local CSV file."""
+    socp_df = pd.read_csv(csv_path, dtype={'occupation_socp': str})
+    socp_df['occupation_socp'] = socp_df['occupation_socp'].str.strip()
+    socp_df['occupation_socp_description'] = socp_df['occupation_socp_description'].fillna('').str.strip()
+    socp_map = dict(zip(socp_df['occupation_socp'], socp_df['occupation_socp_description']))
+    print(f"Loaded {len(socp_map)} SOCP descriptions from {csv_path}")
+    return socp_map
 
 def export_df_as_html(df, title, filename):
     """Save a styled HTML table to disk without requiring jinja2."""
@@ -229,7 +249,8 @@ def main(
     general_population_path: str = "/scif/data/pop/",
     population_path: str = "/project/bii_nssac/production/detailed_populations/ver_2_4_0/va",
     csv_path: str = "/scif/data/site_polygons.csv",
-    polygon: str = "DMA"
+    polygon: str = "DMA",
+    socp_description_csv: str = "/scif/data/occupation_socp_descriptions.csv"
     ):
     """
     This is the default function called when the script
@@ -260,7 +281,7 @@ def main(
         'DMA': "/scif/data/NationalDMAs.geojson",
         'HSA': "/scif/data/HsaBdry_AK_HI_unmodified.geojson",
         'HRR': "/scif/data/Hrr98Bdry_AK_HI_unmodified.geojson",
-        'wastewater': "/scif/data/wastewaterscan_polygons_extracted.shp",
+        'wastewater': "site_polygons.csv",
         'user_provided': None
         }
     
@@ -268,7 +289,7 @@ def main(
         'DMA': 'NAME',
         'HSA': 'HSANAME',
         'HRR': 'NAME',
-        'wastewater': 'polygon_id',
+        'wastewater': 'site_name',
         'user_provided': None
     }
 
@@ -294,18 +315,37 @@ def main(
     pop_in_polygons = find_pop_in_polygons(config, pop_gdf, polygons_gdf)
     print(f'Population in polygons is size: {pop_in_polygons.shape[0]}')
 
+    socp_map = load_socp_description_map(socp_description_csv)
+
 #    category_columns = ['place_name', 'race']
     geo_col = polygon_name_to_groupby_col[config['polygon']]
 
-    category_columns = [geo_col,'tiered_race_ethnicity']
-    category_to_count = 'tiered_race_ethnicity'
+    categories_to_count = ['tiered_race_ethnicity', 'age_group', 'occupation_socp']
     geographic_grouping = config['polygon']
-    category_counts = count_population_by_category(pop_in_polygons, category_columns)
-    print("Population counts by category:\n", category_counts)
+    category_html_template = "/scif/data/population_counts_by_category.html"
 
-    category_html = "/scif/data/population_counts_by_category.html"
-    print("Outputting population counts by category to HTML:", category_html)
-    export_df_as_html(category_counts, f"Population Counts of {category_to_count} by {geographic_grouping}", category_html)
+    for category_to_count in categories_to_count:
+        pop_for_count = pop_in_polygons.copy()
+        if category_to_count == 'occupation_socp':
+            pop_for_count[category_to_count] = (
+                pop_for_count[category_to_count]
+                .astype(str)
+                .str.strip()
+                .map(socp_map)
+                .fillna(pop_for_count[category_to_count].astype(str).str.strip())
+            )
+
+        category_columns = [geo_col, category_to_count]
+        category_counts = count_population_by_category(pop_for_count, category_columns)
+        print(f"Population counts by {category_to_count}:\n", category_counts)
+
+        category_html = category_html_template.replace("category", category_to_count)
+        print(f"Outputting population counts by {category_to_count} to HTML:", category_html)
+        export_df_as_html(
+            category_counts,
+            f"Population Counts of {category_to_count} by {geographic_grouping}",
+            category_html,
+        )
 
     # outpath = Path(outdir)
     # outpath.mkdir(exist_ok=True, parents=True)
